@@ -14,26 +14,28 @@ import SentimentoCard from './SentimentoCard';
 function App() {
 
   const emocaoFotos = [
-    { nome: 'Tristeza', imagem: Tristeza1 },
-    { nome: 'Alegria', imagem: Alegria2 },
-    { nome: 'Raiva', imagem: Raiva3 },
-    { nome: 'Medo', imagem: Medo4 },
-    { nome: 'Nojinho', imagem: Nojinho5 },
-    { nome: 'Ansiedade', imagem: Ansiedade6 },
-    { nome: 'Vergonha', imagem: Vergonha7 },
-    { nome: 'Inveja', imagem: Inveja8 },
-    { nome: 'Tedio', imagem: Tedio9 }
+    { nome: 'Tristeza', imagem: Tristeza1, mensagem:'Tristeza' },
+    { nome: 'Alegria', imagem: Alegria2, mensagem:'Alegria' },
+    { nome: 'Raiva', imagem: Raiva3, mensagem:'Raiva'},
+    { nome: 'Medo', imagem: Medo4, mensagem:'Medo' },
+    { nome: 'Nojinho', imagem: Nojinho5, mensagem:'Nojinho' },
+    { nome: 'Ansiedade', imagem: Ansiedade6, mensagem:'Ansiedade' },
+    { nome: 'Vergonha', imagem: Vergonha7, mensagem:'Vergonha' },
+    { nome: 'Inveja', imagem: Inveja8, mensagem:'Inveja' },
+    { nome: 'Tedio', imagem: Tedio9, mensagem:'Tedio' }
 
   ];
 
   return (
     <>
       <SentimentoCard 
-        titulo="Fotos Sentimentos"
+        titulo="Sentimentos"
         imagem={emocaoFotos}
       />
+      <h1>Selecione uma imagem e descubra o sentimento</h1>
+      <p id='mensagem'>vc escoleu</p>
     </>
   )
-}
+};
 
 export default App
